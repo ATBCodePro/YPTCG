@@ -107,5 +107,3 @@ function renderCards() {
         grid.appendChild(div); 
     }); 
 }
-    }); 
-}
