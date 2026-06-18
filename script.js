@@ -83,22 +83,11 @@ function renderCards() {
         const img = document.createElement("img"); 
         img.src = card.IMG_URL; 
         
-        let isTouch = false;
+        // Modal Open Event Triggered on Image Click
+        img.addEventListener("click", () => {
+            // If the user is on a touchscreen device (like an iPad), do nothing
+            if (window.matchMedia("(pointer: coarse)").matches) return;
 
-        // 1. If a touch starts, mark this as a touchscreen interaction
-        img.addEventListener("touchstart", () => {
-            isTouch = true;
-        }, { passive: true });
-
-        // 2. The click event handles the modal logic
-        img.addEventListener("click", (e) => {
-            // If it was triggered by a touch, reset the flag and block the modal
-            if (isTouch) {
-                isTouch = false; // Reset for future interactions
-                return; 
-            }
-            
-            // Otherwise, it's a genuine desktop mouse click!
             modalImg.src = card.IMG_URL;
             modal.classList.add("modal-open");
         });
