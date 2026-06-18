@@ -83,13 +83,17 @@ function renderCards() {
         const img = document.createElement("img"); 
         img.src = card.IMG_URL; 
         
-        // Modal Open Event Triggered on Image Click
-        img.addEventListener("click", () => {
-            modalImg.src = card.IMG_URL;
-            modal.classList.add("modal-open");
+        // Listen for pointer release and verify it's a left mouse click
+        img.addEventListener("pointerup", (e) => {
+            if (e.pointerType === "mouse" && e.button === 0) {
+                modalImg.src = card.IMG_URL;
+                modal.classList.add("modal-open");
+            }
         });
         
         div.appendChild(img); 
         grid.appendChild(div); 
+    }); 
+}
     }); 
 }
