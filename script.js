@@ -85,9 +85,6 @@ function renderCards() {
         
         // Modal Open Event Triggered on Image Click
         img.addEventListener("click", () => {
-            // If the user is on a touchscreen device (like an iPad), do nothing
-            if (window.matchMedia("(pointer: coarse)").matches) return;
-
             modalImg.src = card.IMG_URL;
             modal.classList.add("modal-open");
         });
