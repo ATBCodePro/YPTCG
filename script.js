@@ -11,6 +11,11 @@ const jumpSelect = document.getElementById("jump-to");
 const darkToggle = document.getElementById("dark-mode-toggle");
 const grid = document.getElementById("card-grid");
 
+// New Modal Elements
+const modal = document.getElementById("card-modal");
+const modalImg = document.getElementById("modal-img");
+const modalClose = document.querySelector(".modal-close");
+
 /* Search Area */
 searchInput.addEventListener("input", e => {const value = e.target.value.toLowerCase(); /* Search */
 filteredCards = cards.filter(c => c.CRDNME.toLowerCase().includes(value) );renderCards();});
@@ -55,8 +60,36 @@ jumpSelect.value = "";});}
 /* Toggle Area */
 darkToggle.addEventListener("click", () => {grid.classList.toggle("darkness-active");});
 
+/* Modal Logic Hooks */
+// Close modal when 'X' is clicked
+modalClose.addEventListener("click", () => {
+    modal.classList.remove("modal-open");
+});
+
+// Close modal when clicking anywhere on the dark background area
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("modal-open");
+    }
+});
+
 /* Cards Area */
-function renderCards() {grid.innerHTML = ""; filteredCards.forEach(card => {
-const div = document.createElement("div"); div.className = "card"; 
-const img = document.createElement("img"); img.src = card.IMG_URL; 
-div.appendChild(img); grid.appendChild(div); }); }
+function renderCards() {
+    grid.innerHTML = ""; 
+    filteredCards.forEach(card => {
+        const div = document.createElement("div"); 
+        div.className = "card"; 
+        
+        const img = document.createElement("img"); 
+        img.src = card.IMG_URL; 
+        
+        // Modal Open Event Triggered on Image Click
+        img.addEventListener("click", () => {
+            modalImg.src = card.IMG_URL;
+            modal.classList.add("modal-open");
+        });
+        
+        div.appendChild(img); 
+        grid.appendChild(div); 
+    }); 
+}
