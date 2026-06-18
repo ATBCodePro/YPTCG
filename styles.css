@@ -1,0 +1,21 @@
+/* CSS Area */
+body {background: #030535;} /* Cards Display Area */
+
+/* Header Area */
+header {background: #050747; padding: 10px; display: flex; gap: 10px; justify-content: center;
+position: sticky; top: 0; z-index: 100;}
+.page-logo {max-width: 40px; height: auto;} /* Page Logo Size */
+#search, #sort, #columns, #jump-to, #dark-mode-toggle, .nav-link
+{padding: 8px 12px; font-size: 16px; background-color: #333;
+color: #fff; border: 1px solid #444; border-radius: 12px; appearance: none; -webkit-appearance: none;}
+#dark-mode-toggle {cursor: pointer;}
+#dark-mode-toggle:active {background-color: #555;}
+#card-grid.darkness-active img {filter: invert(100%);} /* Cards Invert Colour Mode */
+#search::placeholder {color: #fff; opacity: 0.7;} /* Placeholder Text = White */
+#search:focus, #sort:focus, #columns:focus {box-shadow: 0 0 5px rgba(0, 191, 255, 0.8);} /* On Focus */
+
+/* Cards Area */
+#card-grid {display: grid; grid-template-columns: repeat(var(--cols, 5), 1fr);
+gap: 0px; padding: 0px; max-width: 999px; margin: 0 auto;}
+.card img {width: 100%; height: auto; display: block; cursor: pointer; border-radius: 15px;}
+

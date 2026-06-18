@@ -1,0 +1,92 @@
+[
+  {
+    "EVO": 1,
+    "CRDNME": "Graviton",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/8L3SBc7T/Slide1.jpg"
+  },
+  {
+    "EVO": 2,
+    "CRDNME": "Peptide",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/L3LrY6M/Slide2.jpg"
+  },
+  {
+    "EVO": 3,
+    "CRDNME": "Nucleotide",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/20DSJz2N/Slide3.jpg"
+  },
+  {
+    "EVO": 4,
+    "CRDNME": "Orthohepadnavirus",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/ycG4g2fH/Slide4.jpg"
+  },
+  {
+    "EVO": 5,
+    "CRDNME": "Tupanvirus",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/fG88c6bB/Slide5.jpg"
+  },
+  {
+    "EVO": 6,
+    "CRDNME": "Pelvirus",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/ccSK40yL/Slide6.jpg"
+  },
+  {
+    "EVO": 7,
+    "CRDNME": "Adenovirus",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/rfHr3swG/Slide7.jpg"
+  },
+  {
+    "EVO": 8,
+    "CRDNME": "Lifearcterchaea",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/FLvTnhbp/Slide8.jpg"
+  },
+  {
+    "EVO": 9,
+    "CRDNME": "Fusobacteria",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/Mk6Sc854/Slide9.jpg"
+  },
+  {
+    "EVO": 10,
+    "CRDNME": "Pneumoniaeteria",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/TqNTtgS5/Slide10.jpg"
+  },
+  {
+    "EVO": 11,
+    "CRDNME": "Spirochaeteria",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/7txCjcjn/Slide11.jpg"
+  },
+  {
+    "EVO": 12,
+    "CRDNME": "Nanobacteria",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/042BPpq/Slide12.jpg"
+  },
+  {
+    "EVO": 13,
+    "CRDNME": "Rickettsiateria",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/xSJJCpqt/Slide13.jpg"
+  },
+  {
+    "EVO": 14,
+    "CRDNME": "Stellavacteria",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/6cqcSw4k/Slide14.jpg"
+  },
+  {
+    "EVO": 15,
+    "CRDNME": "Thiomargariteria",
+    "LP": null,
+    "IMG_URL": "https://i.ibb.co/QFR5sb25/Slide15.jpg"
+  }
+]
