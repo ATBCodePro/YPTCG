@@ -83,12 +83,24 @@ function renderCards() {
         const img = document.createElement("img"); 
         img.src = card.IMG_URL; 
         
-        // Listen for pointer release and verify it's a left mouse click
-        img.addEventListener("pointerup", (e) => {
-            if (e.pointerType === "mouse" && e.button === 0) {
-                modalImg.src = card.IMG_URL;
-                modal.classList.add("modal-open");
+        let isTouch = false;
+
+        // 1. If a touch starts, mark this as a touchscreen interaction
+        img.addEventListener("touchstart", () => {
+            isTouch = true;
+        }, { passive: true });
+
+        // 2. The click event handles the modal logic
+        img.addEventListener("click", (e) => {
+            // If it was triggered by a touch, reset the flag and block the modal
+            if (isTouch) {
+                isTouch = false; // Reset for future interactions
+                return; 
             }
+            
+            // Otherwise, it's a genuine desktop mouse click!
+            modalImg.src = card.IMG_URL;
+            modal.classList.add("modal-open");
         });
         
         div.appendChild(img); 
