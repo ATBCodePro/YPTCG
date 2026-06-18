@@ -4,15 +4,22 @@
 <head> <meta charset="UTF-8"/> <title>YPTCG</title> <link rel="stylesheet" href="styles.css" /> </head>
 <body> <!-- All Visible Content; -->
 
+<!-- Header Area -->
 <header> <!-- Header Section; Visible; position: sticky; CSS used To Keep Header Visible On Scroll -->
 <img src="https://i.ibb.co/LzdVS6GL/ATB-Logo.png" alt="ATB Logo" class="page-logo" /> <!-- Page Logo -->
+
+<!-- Search Area -->
 <input type="text" id="search" placeholder="Search Card Name..." /> <!-- Search Bar -->
+
+<!-- Sort Area -->
 <select id="sort"> <!-- Drop Down Menu Sort By -->
 <option value="evo" selected>Evo</option>
 <option value="lp_asc">Micro</option>
 <option value="name">AZ</option>
 <option value="lp_desc">Macro</option>
 </select> <!-- Drop Down Menu Sort By Ending Tag -->
+
+<!-- Zoom Area -->
 <select id="columns"> <!-- Drop Down Menu Zoom Percent -->
 <option value="5" selected>100%</option>
 <option value="4">200%</option>
@@ -21,12 +28,18 @@
 <option value="1">500%</option>
 </select> <!-- Drop Down Menu Zoom Percent Ending Tag -->
 
+<!-- Toggle Area -->
 <button id="dark-mode-toggle">V</button> <!-- Button -->
 <a href="index.html" class="nav-link">Home</a>
 </header> <!-- Header Section; Ending Tag -->
 
 <!-- Cards Area -->
 <main id="card-grid"></main> <!-- Div Alternative = Main Div -->
+
+<!-- Modal Area -->
+<div id="card-modal" class="modal"> <span class="modal-close">&times;</span>
+<img class="modal-content" id="modal-img" src="" alt="Full Card View"> </div>
+
 <script src="script.js"></script> <!-- Javascript Runs At End Once All HTML Is Parsed -->
 </body> <!-- All Visible Content; Ending Tag -->
 </html> <!-- Root Element; Primary Language Set; Ending Tag -->
